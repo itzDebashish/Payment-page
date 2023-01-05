@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="D:\web development\1.jpg">
+    <h1 class="special">Payment form</h1>
+    <form action="">
+        <h1 class="one">Contact details</h1>
+        <p>Name: <input type="text" name="name" required placeholder="Debashish"></p>
+        <fieldset>
+            <legend>Gender</legend>
+        <p>
+            Male <input type="radio" name="Gender" id="Male" required> Female <input type="radio" name="Gender" id="Female">
+            Other <input type="radio" name="Gender" id="Other">
+        </p>
+    </fieldset>
+    <p >
+        Address: <textarea name="address" id="address" cols="150" rows="5" placeholder="Enter your Address"></textarea>
+    </p>
+    <p>
+        Email id: <input type="email" name="email" id="email" placeholder="Enter your email">
+    
+    </p>
+    <p>
+        pincode:<input type="number" name="pincode" id="pincode" placeholder="Enter your area Pincode ">
+    </p>
+    <h1 class="one">Payment details</h1>
+    <p>
+        card type: <select name="card_type" id="card_type" required  >
+        <option value="">--select card type--</option>
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="rupay">Rupay</option></select>
+
+    </p>
+    <p>
+        Card number: <input type="number" name="card_number" id="card_number"required placeholder="Enter card number">
+    </p>
+    <p>
+        Expiry date: <input type="date" name="exp_date" id="exp_date" required placeholder="Enter Expiry Date">
+    </p>
+    <p>
+        cvv: <input type="number" name="cvv" id="cvv" required placeholder="Enter your cvv">
+    </p>
+    <input type="submit" value="Pay Now">
+</body>
+</html>
